@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Pet</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="main-wrapper">
+
+    <div id="pet-container">
+
+      <h2 id="status">Loading...</h2>
+
+      <img id="pet" src="cat.webp" alt="kitty" onclick="secretClick()">
+
+      <div id="stats">
+        <p>Hunger</p>
+        <div class="stat-bar"><div id="hunger-bar"></div></div>
+
+        <p>Energy</p>
+        <div class="stat-bar"><div id="energy-bar"></div></div>
+
+        <p>Happiness</p>
+        <div class="stat-bar"><div id="happiness-bar"></div></div>
+
+        <p>Cleanliness</p>
+        <div class="stat-bar"><div id="clean-bar"></div></div>
+      </div>
+
+      <div class="actions">
+        <button onclick="changeCatAction('feed')">Feed</button>
+        <button onclick="changeCatAction('play')">Play</button>
+        <button onclick="changeCatAction('clean')">Clean</button>
+        <button onclick="changeCatAction('sleep')">Sleep</button>
+      </div>
+
+      <div id="highscores">
+        <h3>Achievements</h3>
+        <p>Simon: <span id="simon-score"></span></p>
+        <p>Catch: <span id="catch-score"></span></p>
+        <p>Tic Tac Toe Wins: <span id="ttt-wins"></span></p>
+      </div>
+
+    </div>
+
+    <div id="mini-games">
+      <button onclick="window.location.href='simon.html'">Simon Game</button>
+      <button onclick="window.location.href='catch-the-cat.html'">Catch the Cat</button>
+      <button onclick="window.location.href='tic-tac-toe.html'">Tic Tac Toe</button>
+    </div>
+
+  </div>
+
+  <script src="petSystem.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>

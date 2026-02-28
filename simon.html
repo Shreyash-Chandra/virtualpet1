@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Game</title>
+    <link rel="stylesheet" href="simon.css">
+</head>
+<body>
+    <h1>Simon Game</h1>
+    <p>Repeat the pattern!</p>
+    <div id="game-board">
+        <div class="color-button" id="red" onclick="playerClick('red')"></div>
+        <div class="color-button" id="blue" onclick="playerClick('blue')"></div>
+        <div class="color-button" id="yellow" onclick="playerClick('yellow')"></div>
+        <div class="color-button" id="green" onclick="playerClick('green')"></div>
+    </div>
+    <button onclick="startGame()">Start Game</button>
+    <p id="status"></p>
+    <script src="petSystem.js"></script>
+    <script src="simon.js"></script>
+</body>
+</html>
